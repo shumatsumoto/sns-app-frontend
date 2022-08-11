@@ -52,7 +52,23 @@ function Sidebar() {
               alt=""
               className="sidebarFriendImg"
             />
-            <span className="sidebarFriendName">Shu Matsumoto</span>
+            <span className="sidebarFriendName">AAA</span>
+          </li>
+          <li className="sidebarFriend">
+            <img
+              src="/assets/person/3.jpeg"
+              alt=""
+              className="sidebarFriendImg"
+            />
+            <span className="sidebarFriendName">BBB</span>
+          </li>
+          <li className="sidebarFriend">
+            <img
+              src="/assets/person/4.jpeg"
+              alt=""
+              className="sidebarFriendImg"
+            />
+            <span className="sidebarFriendName">CCC</span>
           </li>
         </ul>
       </div>
