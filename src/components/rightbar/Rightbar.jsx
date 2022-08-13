@@ -2,11 +2,12 @@ import React from "react";
 import Online from "../online/Online";
 import "./Rightbar.css";
 import { Users } from "../../dummyData";
+import { Home } from "@mui/icons-material";
 
-function RightBar() {
-  return (
-    <div className="rightbar">
-      <div className="rightbarWrapper">
+function RightBar({ profile }) {
+  const HomeRightbar = () => {
+    return (
+      <>
         <div className="eventContainer">
           <img src="./assets/star.png" alt="" className="starImg" />
           <span className="eventText">
@@ -40,6 +41,18 @@ function RightBar() {
           className="rightbarPromotionImg"
         />
         <p className="promotionName">Shu Matsumoto 株式会社</p>
+      </>
+    );
+  };
+
+  const ProfileRightbar = () => {
+    return <>Profileライトバー</>;
+  };
+
+  return (
+    <div className="rightbar">
+      <div className="rightbarWrapper">
+        {profile ? <ProfileRightbar /> : <HomeRightbar />}
       </div>
     </div>
   );
