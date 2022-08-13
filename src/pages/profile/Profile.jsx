@@ -20,7 +20,7 @@ function Profile() {
                 className="profileCoverImg"
               />
               <img
-                src="./assets/person/7.jpeg"
+                src="./assets/person/1.jpeg"
                 alt=""
                 className="profileUserImg"
               />
