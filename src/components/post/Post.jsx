@@ -1,20 +1,25 @@
 import { MoreVert } from "@mui/icons-material";
 import React from "react";
 import "./Post.css";
+import { Users } from "../../dummyData";
 
 function Post({ post }) {
-  console.log(post);
   return (
     <div className="post">
       <div className="postWrapper">
         <div className="postTop">
           <div className="postTopLeft">
             <img
-              src="./assets/person/1.jpeg"
+              src={
+                Users.filter((user) => user.id === post.userId)[0]
+                  .profilePicture
+              }
               alt=""
               className="postProfileImg"
             />
-            <span className="postUsername">Shu Matsumoto</span>
+            <span className="postUsername">
+              {Users.filter((user) => user.id === post.userId)[0].username}
+            </span>
             <span className="postDate">{post.date}</span>
           </div>
           <div className="postTopRight">
