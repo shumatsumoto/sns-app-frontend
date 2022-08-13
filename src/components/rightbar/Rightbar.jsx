@@ -46,7 +46,68 @@ function RightBar({ profile }) {
   };
 
   const ProfileRightbar = () => {
-    return <>Profileライトバー</>;
+    return (
+      <>
+        <h4 className="rightbarTitle">ユーザー情報</h4>
+        <div className="rightbarInfo">
+          <div className="rightbarInfoItem">
+            <span className="rightbarInfokey">出身：</span>
+            <span className="rightbarInfokey">福岡</span>
+          </div>
+          <h4 className="rightbarTitle">ユーザー情報</h4>
+          <div className="rightbarFollowings">
+            <div className="rightbarFollowing">
+              <img
+                src="./assets/person/1.jpeg"
+                alt=""
+                className="rightbarFollowingImg"
+              />
+              <span className="rightbarFollowingName">AAA</span>
+            </div>
+          </div>
+          <div className="rightbarFollowings">
+            <div className="rightbarFollowing">
+              <img
+                src="./assets/person/2.jpeg"
+                alt=""
+                className="rightbarFollowingImg"
+              />
+              <span className="rightbarFollowingName">BBB</span>
+            </div>
+          </div>
+          <div className="rightbarFollowings">
+            <div className="rightbarFollowing">
+              <img
+                src="./assets/person/3.jpeg"
+                alt=""
+                className="rightbarFollowingImg"
+              />
+              <span className="rightbarFollowingName">CCC</span>
+            </div>
+          </div>
+          <div className="rightbarFollowings">
+            <div className="rightbarFollowing">
+              <img
+                src="./assets/person/4.jpeg"
+                alt=""
+                className="rightbarFollowingImg"
+              />
+              <span className="rightbarFollowingName">DDD</span>
+            </div>
+          </div>
+          <div className="rightbarFollowings">
+            <div className="rightbarFollowing">
+              <img
+                src="./assets/person/5.jpeg"
+                alt=""
+                className="rightbarFollowingImg"
+              />
+              <span className="rightbarFollowingName">EEE</span>
+            </div>
+          </div>
+        </div>
+      </>
+    );
   };
 
   return (
