@@ -64,8 +64,6 @@ function RightBar({ profile }) {
               />
               <span className="rightbarFollowingName">AAA</span>
             </div>
-          </div>
-          <div className="rightbarFollowings">
             <div className="rightbarFollowing">
               <img
                 src="./assets/person/2.jpeg"
@@ -74,8 +72,6 @@ function RightBar({ profile }) {
               />
               <span className="rightbarFollowingName">BBB</span>
             </div>
-          </div>
-          <div className="rightbarFollowings">
             <div className="rightbarFollowing">
               <img
                 src="./assets/person/3.jpeg"
@@ -84,8 +80,6 @@ function RightBar({ profile }) {
               />
               <span className="rightbarFollowingName">CCC</span>
             </div>
-          </div>
-          <div className="rightbarFollowings">
             <div className="rightbarFollowing">
               <img
                 src="./assets/person/4.jpeg"
@@ -94,8 +88,6 @@ function RightBar({ profile }) {
               />
               <span className="rightbarFollowingName">DDD</span>
             </div>
-          </div>
-          <div className="rightbarFollowings">
             <div className="rightbarFollowing">
               <img
                 src="./assets/person/5.jpeg"
