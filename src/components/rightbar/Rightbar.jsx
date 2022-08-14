@@ -5,6 +5,7 @@ import { Users } from "../../dummyData";
 import { Home } from "@mui/icons-material";
 
 function RightBar({ profile }) {
+  const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER;
   const HomeRightbar = () => {
     return (
       <>
@@ -58,7 +59,7 @@ function RightBar({ profile }) {
           <div className="rightbarFollowings">
             <div className="rightbarFollowing">
               <img
-                src="./assets/person/1.jpeg"
+                src={PUBLIC_FOLDER + "/person/1.jpeg"}
                 alt=""
                 className="rightbarFollowingImg"
               />
@@ -66,7 +67,7 @@ function RightBar({ profile }) {
             </div>
             <div className="rightbarFollowing">
               <img
-                src="./assets/person/2.jpeg"
+                src={PUBLIC_FOLDER + "/person/2.jpeg"}
                 alt=""
                 className="rightbarFollowingImg"
               />
@@ -74,7 +75,7 @@ function RightBar({ profile }) {
             </div>
             <div className="rightbarFollowing">
               <img
-                src="./assets/person/3.jpeg"
+                src={PUBLIC_FOLDER + "/person/3.jpeg"}
                 alt=""
                 className="rightbarFollowingImg"
               />
@@ -82,7 +83,7 @@ function RightBar({ profile }) {
             </div>
             <div className="rightbarFollowing">
               <img
-                src="./assets/person/4.jpeg"
+                src={PUBLIC_FOLDER + "/person/4.jpeg"}
                 alt=""
                 className="rightbarFollowingImg"
               />
@@ -90,7 +91,7 @@ function RightBar({ profile }) {
             </div>
             <div className="rightbarFollowing">
               <img
-                src="./assets/person/5.jpeg"
+                src={PUBLIC_FOLDER + "/person/5.jpeg"}
                 alt=""
                 className="rightbarFollowingImg"
               />
