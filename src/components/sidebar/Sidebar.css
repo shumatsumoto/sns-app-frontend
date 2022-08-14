@@ -24,6 +24,11 @@
   transition: all 0.3s;
 }
 
+.sidebarListItem > a {
+  text-decoration: none;
+  color: black;
+}
+
 .sidebarListItem:hover {
   box-shadow: none;
   transform: translateY(5px);
