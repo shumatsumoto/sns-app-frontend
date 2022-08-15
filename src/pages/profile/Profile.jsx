@@ -32,7 +32,7 @@ function Profile() {
             </div>
           </div>
           <div className="profileRightBottom">
-            <TimeLine />
+            <TimeLine username="test02" />
             <Rightbar profile />
           </div>
         </div>
