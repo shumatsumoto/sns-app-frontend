@@ -5,13 +5,15 @@ import Topbar from "../../components/topbar/Topbar";
 import Rightbar from "../../components/rightbar/Rightbar";
 import "./Profile.css";
 import axios from "axios";
+import { useParams } from "react-router-dom";
 
 function Profile() {
   const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER;
   const [user, setUser] = useState({});
+  const username = useParams().username;
   useEffect(() => {
     const fetchUser = async () => {
-      const response = await axios.get(`/users?username=test02`);
+      const response = await axios.get(`/users?username=${username}`);
       // console.log(response);
       setUser(response.data);
     };
