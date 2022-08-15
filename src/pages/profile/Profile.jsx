@@ -1,12 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Sidebar from "../../components/sidebar/Sidebar";
 import TimeLine from "../../components/timeline/TimeLine";
 import Topbar from "../../components/topbar/Topbar";
 import Rightbar from "../../components/rightbar/Rightbar";
 import "./Profile.css";
+import axios from "axios";
 
 function Profile() {
   const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER;
+  const [user, setUser] = useState({});
+  useEffect(() => {
+    const fetchUser = async () => {
+      const response = await axios.get(`/users/`);
+      // console.log(response);
+      setUser(response.data);
+    };
+    fetchUser();
+  }, []);
+
   return (
     <>
       <Topbar />
