@@ -1,7 +1,15 @@
-import React from "react";
+import React, { useRef } from "react";
 import "./Login.css";
 
 function Login() {
+  const email = useRef();
+  const password = useRef();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log(email.current.value);
+    console.log(password.current.value);
+  };
+
   return (
     <div className="login">
       <div className="loginWrapper">
@@ -10,13 +18,14 @@ function Login() {
           <span className="loginDesc">本格的なSNSを、自分の手で。</span>
         </div>
         <div className="loginRight">
-          <div className="loginBox">
+          <form className="loginBox" onSubmit={(e) => handleSubmit(e)}>
             <p className="loginMessage">ログインはこちら</p>
             <input
               type="email"
               className="loginInput"
               placeholder="Eメール"
               required
+              ref={email}
             />
             <input
               type="password"
@@ -24,11 +33,12 @@ function Login() {
               placeholder="パスワード"
               required
               minLength="6"
+              ref={password}
             />
             <button className="loginButton">ログイン</button>
             <span className="loginForgot">パスワードを忘れた方へ</span>
             <button className="loginRegisterButton">アカウントを作成</button>
-          </div>
+          </form>
         </div>
       </div>
     </div>
