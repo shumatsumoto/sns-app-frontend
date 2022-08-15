@@ -4,7 +4,7 @@ import "./Rightbar.css";
 import { Users } from "../../dummyData";
 import { Home } from "@mui/icons-material";
 
-function RightBar({ profile }) {
+function RightBar({ user }) {
   const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER;
   const HomeRightbar = () => {
     return (
@@ -106,7 +106,7 @@ function RightBar({ profile }) {
   return (
     <div className="rightbar">
       <div className="rightbarWrapper">
-        {profile ? <ProfileRightbar /> : <HomeRightbar />}
+        {user ? <ProfileRightbar /> : <HomeRightbar />}
       </div>
     </div>
   );

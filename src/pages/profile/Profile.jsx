@@ -11,7 +11,7 @@ function Profile() {
   const [user, setUser] = useState({});
   useEffect(() => {
     const fetchUser = async () => {
-      const response = await axios.get(`/users/`);
+      const response = await axios.get(`/users?username=test02`);
       // console.log(response);
       setUser(response.data);
     };
@@ -38,13 +38,13 @@ function Profile() {
               />
             </div>
             <div className="profileInfo">
-              <h4 className="profileInfoName">Shu Matsumoto</h4>
-              <span className="profileInfoDesc">Web Developer</span>
+              <h4 className="profileInfoName">{user.username}</h4>
+              <span className="profileInfoDesc">{user.desc}</span>
             </div>
           </div>
           <div className="profileRightBottom">
             <TimeLine username="test02" />
-            <Rightbar profile />
+            <Rightbar user={user} />
           </div>
         </div>
       </div>
