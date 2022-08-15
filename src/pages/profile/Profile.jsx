@@ -45,7 +45,7 @@ function Profile() {
             </div>
           </div>
           <div className="profileRightBottom">
-            <TimeLine username="test02" />
+            <TimeLine username={username} />
             <Rightbar user={user} />
           </div>
         </div>

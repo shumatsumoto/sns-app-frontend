@@ -4,6 +4,7 @@ import "./Post.css";
 import axios from "axios";
 // import { Users } from "../../dummyData";
 import { format } from "timeago.js";
+import { Link } from "react-router-dom";
 
 function Post({ post }) {
   const PUBLIC_FOLDER = process.env.REACT_APP_PUBLIC_FOLDER;
@@ -17,7 +18,7 @@ function Post({ post }) {
       setUser(response.data);
     };
     fetchUser();
-  }, []);
+  }, [post.userId]);
 
   const handleLike = () => {
     setLike(isLiked ? like - 1 : like + 1);
@@ -29,13 +30,15 @@ function Post({ post }) {
       <div className="postWrapper">
         <div className="postTop">
           <div className="postTopLeft">
-            <img
-              src={
-                user.profilePicture || PUBLIC_FOLDER + "/person/noAvatar.png"
-              }
-              alt=""
-              className="postProfileImg"
-            />
+            <Link to={`/profile/${user.username}`}>
+              <img
+                src={
+                  user.profilePicture || PUBLIC_FOLDER + "/person/noAvatar.png"
+                }
+                alt=""
+                className="postProfileImg"
+              />
+            </Link>
             <span className="postUsername">{user.username}</span>
             <span className="postDate">{format(post.createdAt)}</span>
           </div>
