@@ -5,9 +5,9 @@
 <h1 align="center">SNS App Frontend</h1>
 
 <div align="center">
-  <a href="">
-    <img src="" height="35">
-  </a>&nbsp;
+  <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+    <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" height="35">
+  </a>
 </div>
 
 ## :computer: URL
@@ -21,6 +21,7 @@ Building a full-fledged SNS application from scratch with MERN full-stack develo
 ## :hammer: Requirement
 
 - macOS
+- JavaScript
 
 ## :pushpin: Usage
 
